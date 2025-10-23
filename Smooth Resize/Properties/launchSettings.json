@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Smooth Resize (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Smooth Resize (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

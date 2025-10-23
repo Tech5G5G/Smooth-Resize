@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="Smooth_Resize.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Smooth_Resize"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="Smooth Resize">
+
+    <Grid>
+        <NavigationView Margin="0,32,0,0">
+            <NavigationView.PaneFooter>
+                <ComboBox SelectedIndex="0" SelectionChanged="ComboBox_SelectionChanged" Margin="4,0,0,0">
+                    <x:String>Mica</x:String>
+                    <x:String>Tabbed</x:String>
+                    <x:String>Acrylic</x:String>
+                </ComboBox>
+            </NavigationView.PaneFooter>
+        </NavigationView>
+    </Grid>
+</Window>
