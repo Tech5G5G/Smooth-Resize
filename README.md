@@ -1,1 +1,4 @@
 # Smooth Resize
+A test for smooth resizing in WinUI 3
+
+Smooth resize works by hosting a [DesktopWindowTarget](https://learn.microsoft.com/en-us/uwp/api/windows.ui.composition.desktop.desktopwindowtarget?view=winrt-26100) with the mica effect (or other selectable effect) applied underneath a transparent [Microsoft.UI.Xaml.Window](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.window?view=windows-app-sdk-1.8). The DesktopWindowTarget is able to resize faster than the Microsoft.UI.Xaml.Window, allowing it to seem like the mica effect is smoothly sizing with the window itself. The content of the Microsoft.UI.Xaml.Window does not smoothly resize as it still jitters, but it still looks better than the built-in [Window.SystemBackdrop](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.window.systembackdrop?view=windows-app-sdk-1.8#microsoft-ui-xaml-window-systembackdrop) way of doing it.
